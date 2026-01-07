@@ -19,6 +19,22 @@ how Java manages flexible yet safe typing. Through interfaces or superclasses, y
 put into practice the use of varargs and bounded types. All exercises are designed to 
 help you understand the power of this feature in real-world scenarios.
 
+## 📋 Exercise 1: Non-Generic Class
+
+### Objective
+Implement a class that stores three arguments of the same type **without using generics**, demonstrating the limitations of type restriction.
+
+### Implementation
+- **`NoGenericMethods`**: Class with three String fields
+- **Constructor**: Accepts three parameters in any order
+- **Getters**: `getElement1()`, `getElement2()`, `getElement3()`
+
+### Key Demonstration
+The class shows that:
+- ✅ Arguments can be passed to the constructor in **any order**
+- ✅ Values are stored based on parameter position, not content
+- ❌ **Limitation**: The class only works with `String` type
+
 Level 2: This level focuses on refining the use of generics, learning to combine generic 
 parameters with concrete types, and safely using varargs with generics.
 

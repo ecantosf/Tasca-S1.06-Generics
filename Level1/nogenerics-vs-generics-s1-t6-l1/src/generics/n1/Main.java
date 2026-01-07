@@ -2,46 +2,20 @@ package generics.n1;
 
 public class Main {
     public static void main(String[] args) {
-        /*
-         // --- EXERCICI 1: NoGenericMethods ---
-        provarExercici1();
 
-        // --- EXERCICI 2: GenericMethods ---
-        provarExercici2();
-    }
+        System.out.println("Exercise 1: Non Generic Methods:");
 
-    private static void provarExercici1() {
-        // Codi específic de l'exercici 1
-    }
+        NoGenericMethods galaxiesOriginalOrder = new NoGenericMethods("Milky Way","Andromeda","Whirlpool");
+        NoGenericMethods galaxiesReordered = new NoGenericMethods("Andromeda","Milky Way","Whirlpool");
 
-    private static void provarExercici2() {
-        // Codi específic de l'exercici 2
-    }
-         */
+        System.out.println("Galaxies Original Order: " + galaxiesOriginalOrder.toString());
+        System.out.println("Galaxies Reordered: " + galaxiesReordered.toString());
 
-    /*
-    private static void demostrarNoGenericMethods() {
-    // Proves amb NoGenericMethods
-}
-
-private static void demostrarMetodesGenerics() {
-    // Proves amb GenericMethods
-}
-
-private static void crearPersonaDeProva() {
-    // Creació d'objectes Person per proves
-}
-     */
-
-        /*
-        private static NoGenericMethods crearObjecteNoGeneric() {
-    return new NoGenericMethods("valor1", "valor2", "valor3");
-}
-
-private static Person crearPersona(String nom, String cognom, int edat) {
-    return new Person(nom, cognom, edat);
-}
-         */
+        System.out.println("\nExplicit Getter Demonstration:");
+        System.out.println("galaxiesOriginalOrder.getElement1() = " + galaxiesOriginalOrder.getElement1() +
+                " | galaxiesReordered.getElement1() = " + galaxiesReordered.getElement1());
+        System.out.println("Same value ('Andromeda') in different positions: " +
+                "galaxiesOriginalOrder.getElement2() vs galaxiesReordered.getElement1()");
 
     }
 }
