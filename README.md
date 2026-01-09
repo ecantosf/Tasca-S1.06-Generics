@@ -22,7 +22,8 @@ help you understand the power of this feature in real-world scenarios.
 ## 📋 Exercise 1: Non-Generic Class
 
 ### Objective
-Implement a class that stores three arguments of the same type **without using generics**, demonstrating the limitations of type restriction.
+Implement a class that stores three arguments of the same type **without using generics**, 
+demonstrating the limitations of type restriction.
 
 ### Implementation
 - **`NoGenericMethods`**: Class with three String fields
@@ -34,6 +35,25 @@ The class shows that:
 - ✅ Arguments can be passed to the constructor in **any order**
 - ✅ Values are stored based on parameter position, not content
 - ❌ **Limitation**: The class only works with `String` type
+
+## 📋 Exercise 2: Generic Methods
+
+### Objective
+Implement a generic method that can accept three arguments of any type and in any combination, 
+demonstrating the flexibility and type safety of generics.
+
+### Implementation
+- **`GenericMethods`**: Class containing generic methods
+- **`printElements<T, U, V>`**: Generic method that accepts three parameters of potentially different types
+- **`Type Parameters:`**: <T, U, V> represent three independent type parameters
+- **`flexibility`**: Each parameter can be of any reference type
+
+### Key Features Demonstrated
+- ✅ Type Flexibility: Accepts any combination of reference types
+- ✅ Order Independence: Parameters can be passed in any order
+- ✅ Type Safety: No casting required, compile-time type checking
+- ✅ Null Handling: Can accept null values safely
+- ✅ Mixed Types: Different parameters can have different types
 
 Level 2: This level focuses on refining the use of generics, learning to combine generic 
 parameters with concrete types, and safely using varargs with generics.
