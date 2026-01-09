@@ -1,6 +1,6 @@
 package generics.n1;
 
-class GenericMethods<T> {
+class GenericMethods {
 
     public <T, U, V> void printElements (T element1, U element2, V element3) {
         System.out.println("Element 1: " + element1);
