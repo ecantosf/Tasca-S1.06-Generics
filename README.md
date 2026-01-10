@@ -39,12 +39,13 @@ The class shows that:
 ## 📋 Exercise 2: Generic Methods
 
 ### Objective
-Implement a generic method that can accept three arguments of any type and in any combination, 
-demonstrating the flexibility and type safety of generics.
+Implement a generic method that can accept three arguments of any type and in any 
+combination, demonstrating the flexibility and type safety of generics.
 
 ### Implementation
 - **`GenericMethods`**: Class containing generic methods
-- **`printElements<T, U, V>`**: Generic method that accepts three parameters of potentially different types
+- **`printElements<T, U, V>`**: Generic method that accepts three parameters of 
+potentially different types
 - **`Type Parameters:`**: <T, U, V> represent three independent type parameters
 - **`flexibility`**: Each parameter can be of any reference type
 
@@ -58,11 +59,35 @@ demonstrating the flexibility and type safety of generics.
 Level 2: This level focuses on refining the use of generics, learning to combine generic 
 parameters with concrete types, and safely using varargs with generics.
 
-### 📋 Exercise 1 Testing
+## 📋 Exercise 1 Testing
 - Created MainN2 class for Level 2 exercises
 - Fixed object instantiation syntax (new keyword)
 - Tested GenericMethodsPartial with Person, String and fixed String
 - Demonstrated mixed generic/fixed parameter usage
+
+## 📋 Exercise 2: Generic Varargs Methods
+
+### Objective
+Implement a generic method using varargs (variable arguments) to understand the flexibility 
+and type safety considerations when working with generic variable-length parameters.
+
+### Implementation
+- **`GenericMethodsVarargs.java`**: Contains the `printAll()` method with generic varargs
+- **Method signature**: `public <T> void printAll(T... elements)`
+- **Features**: Accepts any number of arguments of the same generic type
+
+### Key Demonstrations
+
+#### Flexibility with Argument Count:
+- **Zero arguments**: `printAll()`
+- **Single argument**: `printAll("Single")`
+- **Multiple arguments**: `printAll("A", "B", "C")`
+- **Array as varargs**: `printAll(stringArray)`
+
+#### Type Consistency:
+- All arguments must be of the same type `T`
+- Works with Strings, Integers, custom objects (ChemicalElement)
+- Mixed types infer to `Object` (with compiler warnings)
 
 Level 3: IIn this level, you will combine advanced generics with interfaces, bounded 
 types, and polymorphism. You will simulate a real-world example with devices that can 
