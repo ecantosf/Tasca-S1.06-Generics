@@ -58,6 +58,12 @@ demonstrating the flexibility and type safety of generics.
 Level 2: This level focuses on refining the use of generics, learning to combine generic 
 parameters with concrete types, and safely using varargs with generics.
 
+### 📋 Exercise 1 Testing
+- Created MainN2 class for Level 2 exercises
+- Fixed object instantiation syntax (new keyword)
+- Tested GenericMethodsPartial with Person, String and fixed String
+- Demonstrated mixed generic/fixed parameter usage
+
 Level 3: IIn this level, you will combine advanced generics with interfaces, bounded 
 types, and polymorphism. You will simulate a real-world example with devices that can 
 make calls and take photos.
