@@ -62,6 +62,13 @@ Level 3: IIn this level, you will combine advanced generics with interfaces, bou
 types, and polymorphism. You will simulate a real-world example with devices that can 
 make calls and take photos.
 
+### Structural Refactoring
+- Renamed package from `generics.n1` to `generics.n12`
+- Renamed `Main.java` to `MainN1.java` (Level 1 specific)
+- Created `MainN2.java` skeleton for Level 2 exercises
+- All Level 1 exercises remain functional
+- Ready for Level 2 implementation
+
 ## Features
 - Combine generic objects with specific types, including constraints with interfaces 
 or classes.
