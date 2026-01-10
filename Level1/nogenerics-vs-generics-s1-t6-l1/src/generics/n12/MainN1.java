@@ -1,9 +1,9 @@
-package generics.n1;
+package generics.n12;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class MainN1 {
     public static void main(String[] args) {
 
         System.out.println("Exercise 1: Non Generic Methods:");

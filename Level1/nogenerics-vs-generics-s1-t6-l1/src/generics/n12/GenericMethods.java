@@ -1,4 +1,4 @@
-package generics.n1;
+package generics.n12;
 
 class GenericMethods {
 
